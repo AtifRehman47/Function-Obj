@@ -96,3 +96,154 @@
 // let convert = Arr1.map(itm => Object.assign({},itm))
 // console.log(convert);
 
+
+// Object with assign 
+
+// let Person1 = {
+//     FName:'Atif',
+//     LName:'Rehman',
+//     Age:20
+// };
+
+// let Person2 = {FName:'Misbah',LName:'Atif'}
+
+// console.log(Object.assign(Person1,Person2))
+
+
+// Object using this 
+
+// let user = {
+//     Name:'Atif',
+//     Id:46,
+//     Login:'Yes',
+
+//     find : function(){
+//         return this.Id
+//     }
+    
+// }
+
+// console.log(user.Login);
+
+
+// let std = {
+//     Name:'Atif',
+//     From:'Karachi',
+//     Login:true,
+//     pass:46,
+
+//     find : function(){
+//         if (this.pass === 46) {
+//             return this.Login 
+//         } else {
+//             return 'Not Login'
+//         }
+//     }
+// }
+
+// console.log(std.find());
+
+
+// Object binding method 
+
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+// };
+
+// function sayHello() {
+//   return "Hello " + this.firstName;
+// }
+
+// const boundFunc = sayHello.bind(person);
+
+// console.log(boundFunc()); // Hello John
+
+
+// let Person = {
+//     Name:'MisbahAtif',
+//     From:'Karachi',
+// }
+
+// function say(){
+//     return 'Hello' + this.Name;
+// }
+
+// let boundfunc = say.bind(Person)
+// console.log(boundfunc());
+
+
+// let person1 = {
+//     Name:'Atif',
+//     from:'Karachi',
+// }
+// let person2 = {
+//     Name:'Misbah',
+//     from:'Karachi',
+// }
+
+// function say(){
+//     return 'hello' + this.Name + this.from
+// }
+
+// let boncfunc = say.bind(person1)
+// let boncfunc2 = say.bind(person2)
+// console.log(boncfunc());
+// console.log(boncfunc2());
+
+
+// let personOne = {
+//     Name:'Atif',
+//     From:'Karachi',
+// }
+
+// let personTwo = {
+//     Name:'Asim',
+//     From:'Lahore',
+// }
+
+// let personThree = {
+//     Name:'Misbah',
+//     From:'Karachi',
+// }
+
+// function find() {
+//     return `Hey ${this.Name} ${this.From}`
+// }
+
+// let buncfunc = find.bind(personOne)
+// let buncfunc2 = find.bind(personThree)
+// let buncfunc3 = find.bind(personTwo)
+// console.log(buncfunc());
+// console.log(buncfunc2());
+// console.log(buncfunc3());
+
+
+// Object Destructring 
+
+// let personOne = {
+//     Name:'Atif',
+//     From:'Karachi',
+// }
+
+// let find = {Name,From} = personOne
+// console.log(find);
+
+
+// let personOne = {
+//     Name:'Atif',
+//     From:'Karachi',
+// }
+
+// let find = { ...personOne , country :"Turkey"}
+// console.log(find);
+
+// let personOne = {
+//     Name:'Atif',
+//     From:'Karachi',
+// }
+// let find = {...personOne,age:20}
+// console.log(find);
+
+
+
